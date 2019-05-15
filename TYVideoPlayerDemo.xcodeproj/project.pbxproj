@@ -96,13 +96,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B05CB0B1D2D095000647989 /* Controller */ = {
+		1BB750B1228BE54F00586519 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				2B34FC801D18D73400B2F3E6 /* TYVideoPlayer.h */,
+				2B34FC811D18D73400B2F3E6 /* TYVideoPlayer.m */,
+				2B000F9E1D2F3BFE00634C07 /* TYPlayerLayerProtocol.h */,
+				2B34FC871D19361600B2F3E6 /* TYVideoPlayerTrack.h */,
+				2B34FC881D19361600B2F3E6 /* TYVideoPlayerTrack.m */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		1BB750B2228BE57700586519 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B59ACF51D2B936000B10FB4 /* TYVideoPlayerView.h */,
+				2B59ACF61D2B936000B10FB4 /* TYVideoPlayerView.m */,
+				2B59ACF81D2B93E800B10FB4 /* TYVideoControlView.h */,
+				2B59ACF91D2B93E800B10FB4 /* TYVideoControlView.m */,
+				2B1A01DE1D2E065A007D3984 /* TYVideoTitleView.h */,
+				2B1A01DF1D2E065A007D3984 /* TYVideoTitleView.m */,
+				2B1A01E11D2E0662007D3984 /* TYVideoBottomView.h */,
+				2B1A01E21D2E0662007D3984 /* TYVideoBottomView.m */,
+				2B1A01E41D2E0668007D3984 /* TYLoadingView.h */,
+				2B1A01E51D2E0668007D3984 /* TYLoadingView.m */,
+				2BD47F151D34AF78004D5834 /* TYVideoErrorView.h */,
+				2BD47F161D34AF78004D5834 /* TYVideoErrorView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1BB750B8228BE60C00586519 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				2B05CB0C1D2D098900647989 /* TYVideoPlayerController.h */,
 				2B05CB0D1D2D098900647989 /* TYVideoPlayerController.m */,
 			);
-			name = Controller;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1BB750B9228BE62200586519 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2B51A0761D3CCBA8000E908F /* TYVideoPlayer.bundle */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		2B11F74C1D17888000BFA5DF = {
@@ -164,51 +203,12 @@
 		2B11F77D1D17889B00BFA5DF /* TYVideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				2B59ACF31D2B932600B10FB4 /* Player */,
-				2B59ACF41D2B933200B10FB4 /* View */,
-				2B05CB0B1D2D095000647989 /* Controller */,
-				2B51A0751D3CCB93000E908F /* Resource */,
+				1BB750B9228BE62200586519 /* Resource */,
+				1BB750B8228BE60C00586519 /* Controller */,
+				1BB750B2228BE57700586519 /* View */,
+				1BB750B1228BE54F00586519 /* Player */,
 			);
 			path = TYVideoPlayer;
-			sourceTree = "<group>";
-		};
-		2B51A0751D3CCB93000E908F /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				2B51A0761D3CCBA8000E908F /* TYVideoPlayer.bundle */,
-			);
-			name = Resource;
-			sourceTree = "<group>";
-		};
-		2B59ACF31D2B932600B10FB4 /* Player */ = {
-			isa = PBXGroup;
-			children = (
-				2B34FC801D18D73400B2F3E6 /* TYVideoPlayer.h */,
-				2B34FC811D18D73400B2F3E6 /* TYVideoPlayer.m */,
-				2B000F9E1D2F3BFE00634C07 /* TYPlayerLayerProtocol.h */,
-				2B34FC871D19361600B2F3E6 /* TYVideoPlayerTrack.h */,
-				2B34FC881D19361600B2F3E6 /* TYVideoPlayerTrack.m */,
-			);
-			name = Player;
-			sourceTree = "<group>";
-		};
-		2B59ACF41D2B933200B10FB4 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				2B59ACF51D2B936000B10FB4 /* TYVideoPlayerView.h */,
-				2B59ACF61D2B936000B10FB4 /* TYVideoPlayerView.m */,
-				2B59ACF81D2B93E800B10FB4 /* TYVideoControlView.h */,
-				2B59ACF91D2B93E800B10FB4 /* TYVideoControlView.m */,
-				2B1A01DE1D2E065A007D3984 /* TYVideoTitleView.h */,
-				2B1A01DF1D2E065A007D3984 /* TYVideoTitleView.m */,
-				2B1A01E11D2E0662007D3984 /* TYVideoBottomView.h */,
-				2B1A01E21D2E0662007D3984 /* TYVideoBottomView.m */,
-				2B1A01E41D2E0668007D3984 /* TYLoadingView.h */,
-				2B1A01E51D2E0668007D3984 /* TYLoadingView.m */,
-				2BD47F151D34AF78004D5834 /* TYVideoErrorView.h */,
-				2BD47F161D34AF78004D5834 /* TYVideoErrorView.m */,
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +274,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
